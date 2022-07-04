@@ -63,6 +63,48 @@ print(s1|s2)'''
 s2={4,5,6}
 print(s1.intersection(s2))'''
 
+'''s1={1,2,3}
+s2={4,5,6}
+print(s1 & s2)'''
+
+'''s1={1,2,3}
+s2={4,5,6}
+print(s1.difference(s2))'''
+
+'''s1={1,2,3}
+s2={4,5,6}
+print(s1 - s2)'''
+
+'''s1={1,2,3}
+s2={4,5,6}
+print(s1.symmetricdifference(s2))'''
+
+'''s1={1,2,3}
+s2={4,5,6}
+print(s1^s2)'''
+
+#disjoint set
+
+'''s1={1,2}
+s2={2,3}
+print(s1.isdisjoint(s2))'''
+
+'''s1={1,2,3}
+s2={4,5,6}
+print(s1.isdisjoint(s2))'''
+
+print({1,2}.issubset({2,3}))
+print({1,2}.issuperset({2,3}))
+
+print({1,2}.issubset({1,2,3}))
+print({1,2}>={1,2,3})
+
+
+
+
+
+
+
 
 
 
