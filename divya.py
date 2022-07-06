@@ -102,6 +102,47 @@ print({1,2}>={1,2,3})
 
 
 
+#6/7/22
+import re
+string="python is fun"
+s=re.match('python',string)
+print(s)
+'''
+'''
+import re
+txt="my name is divya"
+x=re.findall("[a-m]",txt)
+print(x)
+'''
+'''
+import re
+txt="acd"
+x=re.findall("..",txt)
+print(x)
+'''
+'''
+import re
+pattern='^b...s$'
+test_string='basds'
+result=re.search(pattern,test_string)
+print(result)
+'''
+'''
+import re
+input='aaa'
+result=re.sub('^a','b',input)
+print(result)
+'''
+'''
+import re 
+input='sdsf'
+s=re.sub('s','n','sdsf',1)
+print(s)
+'''
+import re 
+input='sdsf'
+s=re.subn('s','n','sdsf',1)
+print(s)
 
 
 
