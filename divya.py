@@ -143,7 +143,32 @@ import re
 input='sdsf'
 s=re.subn('s','n','sdsf',1)
 print(s)
-
+import re 
+input='sdsf'
+s=re.subn('s','n','sdsf',1)
+print(s)
+'''
+'''
+import re 
+input='dnvr'
+s=re.findall('d','dnvr')
+print(s)
+'''
+import re 
+txt='drsxhygyt'
+s=re.split('x','txt')
+print(s)
+import re 
+pattern='\w+'
+s1='divya'
+s2='sri'
+s3='bhoomi'
+a=re.search(pattern,s1)
+b=re.search(pattern,s2)
+c=re.search(pattern,s3)
+print(a)
+print(b)
+print(c)
 
 
 
