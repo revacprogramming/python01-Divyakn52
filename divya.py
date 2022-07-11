@@ -171,6 +171,137 @@ print(b)
 print(c)
 
 
+#11-7-22
+import re
+txt="the rain in spain"
+x=re.search("ai",txt)
+print(x)    #this will return an object
+
+import re
+txt="the rain in spain"
+x=re.findall("ai",txt)
+print(x) 
+
+import re
+txt="the rain in spain"
+x=re.split("ai",txt)
+print(x) 
+
+
+import re
+x=re.split('ai',"the rain in spain")
+print(x)
+
+import re
+txt="the rain in spain"
+x=re.sub('ai','AI',txt)
+print(x) 
+
+
+import re
+txt="the rain in spain"
+x=re.sub("[ai]",'AI',txt)
+print(x) 
+
+#metacharacters
+# 1. []
+import re
+txt="the rain in spain"
+x=re.findall("[ai]",txt)
+print(x) #metacharacter square bracket will match for both a and i 
+
+import re
+txt="the rain in spain"
+x=re.findall("[a-i]",txt)
+print(x)
+
+import re
+txt="the rain in  sp9ain 1236439"
+x=re.findall("[0-9]",txt)
+print(x)
+
+# 2.\
+import re
+txt="the rain in spain 123"
+x=re.findall("\d",txt)
+print(x)
+
+import re
+txt="the rain in spain"
+x=re.findall("\n",txt)
+print(x)
+
+# 3- .
+import re 
+txt="the rain in spain"
+x=re.findall("sp..n",txt)
+print(x)
+
+import re 
+txt="the rain in spain"
+x=re.findall("s...n",txt)
+print(x)
+
+import re 
+txt="the rain in spain"
+x=re.findall("r.....",txt)
+print(x)
+
+import re 
+txt="the rain in sp79n"
+x=re.findall("sp..n",txt)
+print(x)
+
+import re 
+txt="the rain in spain"
+x=re.findall("r.....s",txt)
+print(x)
+
+# 4-^  (cap or caret symbol)   checks foe starting character
+import re 
+txt="abc"
+x=re.findall("^a",txt)
+print(x)
+
+import re 
+txt="bac"
+x=re.findall("^a",txt)
+print(x)
+
+import re 
+txt="abc"
+x=re.findall("^ab",txt)
+print(x)
+
+# 5-$ (ends with)
+import re 
+txt="abc"
+x=re.findall("$ab",txt)
+print(x)
+
+import re 
+txt="abc"
+x=re.findall("c$",txt)
+print(x)
+
+import re 
+txt="abc"
+x=re.findall("bc$",txt)
+print(x)
+
+import re
+txt='the rain in spain'
+x=re.findall("n$",txt)
+print(x)
+
+import re
+txt='the rain in spaid'
+x=re.findall("n$",txt)
+print(x)
+
+# 6-*(zero or more occurance)
+# 7- +(one or more occurance)
+# 8- ?(zeo or one occurance)
 
 
 
