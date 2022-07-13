@@ -304,4 +304,25 @@ print(x)
 # 8- ?(zeo or one occurance)
 
 
+#13-07-22
+class _318:
+    bench = 100  #attribute
+    monitor = 1
+    def learn():
+        print("hi divya")
+print(_318.bench)
+print(_318.monitor)
+print(_318.learn)
 
+a = _318
+print(a.bench)
+print(a.monitor)
+
+a.learn()
+ 
+class MyClass:
+    'this is my second class'
+    a=10
+    def func(self):
+        print("hii sri")
+print(MyClass.__doc__)
