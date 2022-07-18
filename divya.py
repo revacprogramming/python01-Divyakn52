@@ -326,3 +326,20 @@ class MyClass:
     def func(self):
         print("hii sri")
 print(MyClass.__doc__)
+
+#18/07/22
+'''class student:
+    srn=15'''
+    
+#init is used to initialize the class
+class student:
+    def __init__(self,srn,name):
+        self.srn=srn
+        self.name=name
+    def display(self):
+        print("my name is {1} and srn is {0}".format(self.name,self.srn))
+p1=student("divzz","r21ef215")
+p1.display()
+s1=student("R21EF215","divya")
+print(s1.srn)
+print(s1.name)
