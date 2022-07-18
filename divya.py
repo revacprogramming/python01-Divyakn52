@@ -343,3 +343,72 @@ p1.display()
 s1=student("R21EF215","divya")
 print(s1.srn)
 print(s1.name)
+
+'''class student:
+    srn=15'''
+    
+#init is used to initialize the class
+'''
+class student:
+    def __init__(self,srn,name):
+        self.srn=srn
+        self.name=name
+    def display(self):
+        print("my name is {0} and srn is {1}".format(self.name,self.srn))
+p1=student("r21e215","divzz")
+p2=student("r21ef220","divya")
+p1.name="sri"
+p1.display()
+p2.display()
+s1=student("R21EF215","divya")
+print(s1.srn)
+print(s1.name)
+'''
+'''
+class computer:
+    def __init__(self):
+        self.__maxprice=100 #max price is a private attribute(.__)
+    def sell(self):
+        print("max__.",self.__maxprice)
+    def setprice(self,price):
+        self.__maxprice=price
+c1=computer()
+c1.sell()
+#c1.__maxprice=1000 #we cannot modify the private number
+#c1.sell()
+c1.setprice=1000
+c1.sell()
+'''
+
+class polygon:
+    def sides(self):
+        pass
+
+class triangle(polygon):
+    def sides(self):
+        print("triangle has 3 sides")
+
+class pentagon(polygon):
+    def sides(self):
+        print("pentagon has 5 sides")
+t=triangle()
+t.sides()
+p=pentagon()
+p.sides()
+
+class User:
+    '''Program to demonstrate single inheritance'''
+    def __init__(self,name):
+        self.name=name
+    def printname(self):
+        print("Name = " + self.name)
+class programmer(User):
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print("Programming Python")
+u1=User("shiva")
+u1.printname( )
+u2=programmer("sri")
+u2.printname()
+u2.display( )
