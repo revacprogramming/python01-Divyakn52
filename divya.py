@@ -412,3 +412,95 @@ u1.printname( )
 u2=programmer("sri")
 u2.printname()
 u2.display( )
+
+class User:
+    '''Program to demonstrate single inheritance'''
+    def __init__(self,name):
+        self.name=name
+    def printname(self):
+        print("Name = " + self.name)
+class programmer(User):
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print("Programming Python")
+u1=User("shiva")
+u1.printname( )
+u2=programmer("supreeth")
+u2.printname()
+u2.display( )
+
+
+class User:
+    '''Program to demonstrate single inheritance'''
+    def __init__(self,name):
+        self.name=name
+    def printname(self):
+        print("Name = " + self.name)
+class programmer(User):
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print("Programming Python")
+u1=User("shiva")
+u1.printname( )
+u2=programmer("supreeth")
+u2.printname()
+u2.display( )
+
+
+class polygon:
+    def sides(self):
+        pass
+class triangle(polygon):
+    def sides(self):
+        print("triangle has 3 sides")
+class pentagon(polygon):
+    def sides(self):
+        print("pentagon has 5 sides")
+t=triangle()
+t.sides()
+p=pentagon()
+p.sides()
+
+class User:
+    '''Program to demonstrate single inheritance'''
+    def __init__(self,name):
+        self.name=name
+    def printname(self):
+        print("Name = " + self.name)
+class programmer(User):
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print("Programming Python")
+u1=User("shiva")
+u1.printname( )
+u2=programmer("supreeth")
+u2.printname()
+u2.display( )
+
+#polymorphism
+class Parrot:
+    '''Program to demonstrate Polymorphism'''
+    def fly(self):
+        print("Parrots can fly")
+    def swim(self):
+        print("Parrots can't swim")
+class Penguin:
+    def fly(self):
+        print("Penguins can't fly")
+    def swim(self):
+        print("Penguins can swim")
+# common interface
+def flying_test(bird):
+    bird.fly( )
+    bird.swim( )
+#instantiate objects
+p = Parrot( )
+g = Penguin( )
+# passing the object
+flying_test(p)
+flying_test(g)
+
+
