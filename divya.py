@@ -396,9 +396,9 @@ t.sides()
 p=pentagon()
 p.sides()
 
-class User:
+class User:  #class
     '''Program to demonstrate single inheritance'''
-    def __init__(self,name):
+    def __init__(self,name):  #calling the function
         self.name=name
     def printname(self):
         print("Name = " + self.name)
@@ -407,7 +407,7 @@ class programmer(User):
         self.name=name
     def display(self):
         print("Programming Python")
-u1=User("shiva")
+u1=User("shiva")  #object
 u1.printname( )
 u2=programmer("sri")
 u2.printname()
