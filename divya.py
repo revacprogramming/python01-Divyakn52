@@ -348,7 +348,7 @@ print(s1.name)
     srn=15'''
     
 #init is used to initialize the class
-'''
+
 class student:
     def __init__(self,srn,name):
         self.srn=srn
@@ -363,8 +363,8 @@ p2.display()
 s1=student("R21EF215","divya")
 print(s1.srn)
 print(s1.name)
-'''
-'''
+
+
 class computer:
     def __init__(self):
         self.__maxprice=100 #max price is a private attribute(.__)
@@ -378,7 +378,7 @@ c1.sell()
 #c1.sell()
 c1.setprice=1000
 c1.sell()
-'''
+
 
 class polygon:
     def sides(self):
