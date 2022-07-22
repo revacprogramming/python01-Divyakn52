@@ -43,3 +43,21 @@ tup = (13, 10, 23, 2, 5, 6, 12, 7, 1, 8)
 K = 3
 print("The original tuple: ", tup)
 Findel(tup,K)
+
+
+
+sn1 = {1,2,3,4,5}
+sn2 = {4,5,6,7,8}
+print("Original sets:")
+print(sn1)
+print(sn2)
+print("\nRemove the intersection of a 2nd set from the 1st set using difference_update():")
+sn1.difference_update(sn2)
+print("sn1: ",sn1)
+print("sn2: ",sn2)
+sn1 = {1,2,3,4,5}
+sn2 = {4,5,6,7,8}
+print("\nRemove the intersection of a 2nd set from the 1st set using -= operator:")
+sn1-=sn2
+print("sn1: ",sn1)
+print("sn2: ",sn2)
